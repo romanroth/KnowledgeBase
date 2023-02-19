@@ -3,6 +3,7 @@
 ## Git Commands
 
 - See: https://www.freecodecamp.org/news/git-cheat-sheet/
+- https://stackoverflow.com/a/26000395
 
 ## Github Pages
 
