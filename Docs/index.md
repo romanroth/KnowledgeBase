@@ -8,4 +8,4 @@ This site is a way for me to organize and share this information with anyone who
 
 The quality of the wiki pages also varies widely from just a couple of links and bullet points to whole articles.
 
-If you have any suggestions or issues with this knowledge base then please open an issue or a pull request in the [GitHub repository](https://github.com/romanroth/KnowledgeBase).
+If you have any suggestions or issues with this knowledge base then please open an issue or a pull request.

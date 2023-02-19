@@ -1,8 +1,10 @@
 site_name: Knowledge Base
 site_url: https://wiki.romanroth.net
+repo_url: https://github.com/romanroth/KnowledgeBase
+repo_name: romanroth/KnowledgeBase
 docs_dir: Docs
-#extra_css:
-  #- stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -11,20 +13,14 @@ markdown_extensions:
   - pymdownx.superfences
 theme: 
   name: material
-  theme:
+  icon:
+    repo: fontawesome/brands/git-alt
   palette:
-    # Palette toggle for light mode
     - scheme: light
-      # primary: orange
-      # accent: orange
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: dark
-      # primary: orange
-      # accent: orange
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
