@@ -43,3 +43,4 @@ It is also possible that the **CSP** policy is not set in a way that e.g. allows
 
 - `doxygen -l` generates a layout file (xml) -> reference in doxyfile at `LAYOUT_FILE`
 - Doxygen tag file for C++ STL: https://stackoverflow.com/a/44743279
+- https://coderwall.com/p/ydwz3a/use-highlight-js-for-syntax-highlighting-in-doxygen-generated-documentation
