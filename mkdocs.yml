@@ -4,8 +4,8 @@ repo_url: https://github.com/romanroth/KnowledgeBase
 repo_name: romanroth/KnowledgeBase
 docs_dir: Docs
 plugins:
+  - search
   - material-plausible
-
 extra:
   analytics:
     provider: plausible
