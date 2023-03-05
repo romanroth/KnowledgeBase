@@ -1,0 +1,37 @@
+<!--Taken from: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/content.html-->
+<!--Taken from: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
+
+{% import "partials/language.html" as lang with context %}
+
+<!-- Tags -->
+{% if "material/tags" in config.plugins %}
+{% include "partials/tags.html" %}
+{% endif %}
+
+<!-- Actions -->
+{% include "partials/actions.html" %}
+
+
+<!--Always display Page title at the top-->
+<h1 style="margin:0;color:var(--md-default-fg-color);font-weight:600;font-size:3em">{{ page.title | d(config.site_name, true)}}</h1>
+<small>
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    {% if page.meta.git_revision_date_localized %}
+    {{ lang.t("source.file.date.updated") }}:
+    {{ page.meta.git_revision_date_localized }}
+    {% if page.meta.git_creation_date_localized %}
+    ({{ lang.t("source.file.date.created") }}:
+    {{ page.meta.git_creation_date_localized }})
+    {% endif %}
+    {% endif %}
+</small>
+<hr/>
+
+<!-- Page content -->
+{{ page.content }}
+
+<!-- Was this page helpful? -->
+{% include "partials/feedback.html" %}
+
+<!-- Comment system -->
+{% include "partials/comments.html" %}

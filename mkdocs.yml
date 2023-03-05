@@ -8,7 +8,8 @@ plugins:
   - material-plausible
   - git-revision-date-localized:
       enable_creation_date: true
-      type: date
+      type: custom
+      custom_format: "%d. %B %Y"
 extra:
   analytics:
     provider: plausible
@@ -26,6 +27,7 @@ markdown_extensions:
   - pymdownx.superfences
 theme: 
   name: material
+  custom_dir: mkdocs/overrides
   icon:
     repo: fontawesome/brands/git-alt
   palette:
