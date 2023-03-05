@@ -1,20 +1,20 @@
 # Perf
 
-- Great resource for perf in general: https://www.brendangregg.com/perf.html
-- Unofficial linux perf events page: https://web.eece.maine.edu/~vweaver/projects/perf_events/
-- Perf Timechart manpage: https://manpages.ubuntu.com/manpages/impish/man1/perf-timechart.1.html
+- Great resource for perf in general: [https://www.brendangregg.com/perf.html](https://www.brendangregg.com/perf.html)
+- Unofficial linux perf events page: [https://web.eece.maine.edu/~vweaver/projects/perf_events/](https://web.eece.maine.edu/~vweaver/projects/perf_events/)
+- Perf Timechart manpage: [https://manpages.ubuntu.com/manpages/impish/man1/perf-timechart.1.html](https://manpages.ubuntu.com/manpages/impish/man1/perf-timechart.1.html)
 
 ## Visualizers
 - Flamegraph:
-  - https://github.com/brendangregg/FlameGraph
-  - https://www.brendangregg.com/flamegraphs.html
+  - [https://github.com/brendangregg/FlameGraph](https://github.com/brendangregg/FlameGraph)
+  - [https://www.brendangregg.com/flamegraphs.html](https://www.brendangregg.com/flamegraphs.html)
 - Speedscope visualizer:
-  - https://www.speedscope.app
-  - https://github.com/jlfwong/speedscope
+  - [https://www.speedscope.app](https://www.speedscope.app)
+  - [https://github.com/jlfwong/speedscope](https://github.com/jlfwong/speedscope)
 - Hotspot:
-  - https://github.com/KDAB/hotspot
+  - [https://github.com/KDAB/hotspot](https://github.com/KDAB/hotspot)
 - Firefox Profiler:
-  - https://profiler.firefox.com
+  - [https://profiler.firefox.com](https://profiler.firefox.com)
 
 Install (Debian): `apt install linux-tools-<kernel-version> linux-perf-<kernel-version>`
 

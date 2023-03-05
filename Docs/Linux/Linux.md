@@ -1,8 +1,8 @@
 # Linux
 
-Filesystem: https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
-Filesystem explained: https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
-Linux Explained for Windows Users: https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html
+Filesystem: [https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
+Filesystem explained: [https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained)
+Linux Explained for Windows Users: [https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html](https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html)
 
 - Export to path: `export PATH=$PATH:<path-to-add>`
 
@@ -19,7 +19,7 @@ Linux Explained for Windows Users: https://www.dedoimedo.com/computers/ultimate-
 
 ## Mouting
 
-- To mount a network share (smb/samba) use: `sudo mount -t cifs //<address>/<path> /mnt/<path> -o user=<smbuser>,password=<password>,uid=<localuser>` (requires `cifs-utils`) (see: https://www.thomas-krenn.com/en/wiki/Mounting_a_Windows_Share_in_Linux)
+- To mount a network share (smb/samba) use: `sudo mount -t cifs //<address>/<path> /mnt/<path> -o user=<smbuser>,password=<password>,uid=<localuser>` (requires `cifs-utils`) (see: [https://www.thomas-krenn.com/en/wiki/Mounting_a_Windows_Share_in_Linux](https://www.thomas-krenn.com/en/wiki/Mounting_a_Windows_Share_in_Linux))
 - Mount windows drive: use `ntfs-3g` (??? TODO)
 
 ## apt
@@ -29,7 +29,7 @@ Use `apt`, not `dpkg` to install local packages with `apt install ./<name>.deb`.
 ## Shells
 
 - To run Bash scripts in both Zsh and fish add this shebang to the bash file: `#!/usr/bin/env bash`.
-- Change the default shell: https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell
+- Change the default shell: [https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell)
 
 ### Bash
 
@@ -37,15 +37,15 @@ Use `apt`, not `dpkg` to install local packages with `apt install ./<name>.deb`.
 
 ### fish
 
-- https://fishshell.com
+- [https://fishshell.com](https://fishshell.com)
 - Offers web based configuration with `fish_config`
-- Does not support `!!` out of the box but this can be supported by installing the `bang-bang` plugin from the Oh My Fish Shell framework (https://github.com/oh-my-fish/oh-my-fish)
+- Does not support `!!` out of the box but this can be supported by installing the `bang-bang` plugin from the Oh My Fish Shell framework ([https://github.com/oh-my-fish/oh-my-fish](https://github.com/oh-my-fish/oh-my-fish))
 - When using fish type `help` to open the web documentation
-- Show non shortened path in prompt: `set -U fish_prompt_pwd_dir_length 0` (https://stackoverflow.com/a/37337624)
+- Show non shortened path in prompt: `set -U fish_prompt_pwd_dir_length 0` ([https://stackoverflow.com/a/37337624](https://stackoverflow.com/a/37337624))
 
 ## Packages
 
-- Packages for different distros: https://pkgs.org
+- Packages for different distros: [https://pkgs.org](https://pkgs.org)
 
 ## Package Formats
 
@@ -54,7 +54,7 @@ Use `apt`, not `dpkg` to install local packages with `apt install ./<name>.deb`.
        - universal software package format  
        - does not require root permissions to run  
 - Flatpack  
-       - https://flathub.org  
+       - [https://flathub.org](https://flathub.org)
        - Discover App on KDE seems very buggy  
        - Use `flatpak` commands  
        - If Flatpak Repo is not yet added then run `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`

@@ -4,7 +4,7 @@ See this [markdownguide.org](https://www.markdownguide.org) for an excellent mar
 
 ## Cheat Sheet
 
-Taken from https://www.markdownguide.org/cheat-sheet/.
+Taken from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/).
 Here are some of the most common elements:
 
 ```markdown

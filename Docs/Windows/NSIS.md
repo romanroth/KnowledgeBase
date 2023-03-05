@@ -2,8 +2,8 @@
 
 Used to make Windows installers.
 
-**Download:** https://nsis.sourceforge.io/Download
-**Documentation:** https://nsis.sourceforge.io/Docs/
+- **Download:** [https://nsis.sourceforge.io/Download](https://nsis.sourceforge.io/Download)
+- **Documentation:** [https://nsis.sourceforge.io/Docs/](https://nsis.sourceforge.io/Docs/)
 
 Create a `.nsi` script and right click on it to run the setup.
 

@@ -1,8 +1,8 @@
 # Jenkins
 
-- https://plugins.jenkins.io/htmlpublisher/
-- Jenkins Script: <jenkinsurl>/script
-  - Jenkins CORS für Doxygen: `System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src * 'unsafe-inline' 'unsafe-eval';")`
+- [https://plugins.jenkins.io/htmlpublisher/](https://plugins.jenkins.io/htmlpublisher/)
+- Jenkins Script: `<jenkinsurl>/script`
+  - Jenkins CORS for Doxygen: `System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src * 'unsafe-inline' 'unsafe-eval';")`
 - `groovy.lang.MissingPropertyException` means the variable was not declared
 - On Errors: look for `at WorkflowScript.run(WorkflowScript:<linenumber>)`
 

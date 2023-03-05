@@ -8,8 +8,8 @@
 #endif
 ```
 
-- C++ Cross-Platform with Visual Studio: https://learn.microsoft.com/en-us/cpp/build/get-started-linux-cmake?view=msvc-170
+- C++ Cross-Platform with Visual Studio: [https://learn.microsoft.com/en-us/cpp/build/get-started-linux-cmake?view=msvc-170](https://learn.microsoft.com/en-us/cpp/build/get-started-linux-cmake?view=msvc-170)
 
 - C++ header cache at: `C:\Users\USER\AppData\Local\Microsoft\Linux\HeaderCache\1.0`
 
-- CMake may not find boost lib (from e.g. vcpkg) when boost lib is header only: https://stackoverflow.com/a/72566558. Then just `target_link_libraries(app PUBLIC Boost::boost)`
+- CMake may not find boost lib (from e.g. vcpkg) when boost lib is header only: [https://stackoverflow.com/a/72566558](https://stackoverflow.com/a/72566558). Then just `target_link_libraries(app PUBLIC Boost::boost)`

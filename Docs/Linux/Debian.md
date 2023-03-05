@@ -1,6 +1,6 @@
 # Debian
 
-- Download netinst ISO from: https://www.debian.org/download
+- Download netinst ISO from: [https://www.debian.org/download](https://www.debian.org/download)
 
 ```bash
 # Add user to sudoers (only if a password was set for the root user during installation).
