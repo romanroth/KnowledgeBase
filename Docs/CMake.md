@@ -1,3 +1,10 @@
+---
+tags:
+  - CMake
+  - C++
+  - Programming
+---
+
 # CMake
 
 ```cpp

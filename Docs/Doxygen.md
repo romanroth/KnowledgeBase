@@ -1,3 +1,11 @@
+---
+tags:
+	- Doxygen
+	- C
+	- C++
+	- Documentation
+---
+
 # Doxygen
 
 Doxygen can be used to generate documentation from source code.

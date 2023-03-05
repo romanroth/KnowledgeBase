@@ -1,4 +1,4 @@
-# Knowledge Base
+# Home
 
 Welcome to my personal IT knowledge base/wiki site! This is a collection of information and insights that I've gathered over time as a student and software engineer.
 

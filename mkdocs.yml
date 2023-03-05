@@ -10,6 +10,8 @@ plugins:
       enable_creation_date: true
       type: custom
       custom_format: "%d. %B %Y"
+  - tags:
+      tags_file: tags.md
 extra:
   analytics:
     provider: plausible
@@ -28,6 +30,9 @@ markdown_extensions:
 theme: 
   name: material
   custom_dir: mkdocs/overrides
+  features:
+     - navigation.top
+     #- navigation.tabs
   icon:
     repo: fontawesome/brands/git-alt
   palette:

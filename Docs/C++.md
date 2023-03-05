@@ -1,3 +1,9 @@
+---
+tags:
+  - C++
+  - Programming
+---
+
 # C++
 
 - Unofficial Standard: [http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)

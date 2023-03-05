@@ -1,3 +1,9 @@
+---
+tags:
+  - C
+  - Programming
+---
+
 # C
 
 ## Code Snippets

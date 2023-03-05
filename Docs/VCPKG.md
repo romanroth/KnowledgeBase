@@ -1,3 +1,10 @@
+---
+tags:
+    - C++
+    - Package Manager
+    - Programming
+---
+
 # VCPKG
 
 - C++ Package Manager
