@@ -6,6 +6,9 @@ docs_dir: Docs
 plugins:
   - search
   - material-plausible
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
 extra:
   analytics:
     provider: plausible
