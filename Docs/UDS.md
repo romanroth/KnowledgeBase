@@ -3,10 +3,11 @@
 > ISO Standard: [ISO 14229](https://www.iso.org/search.html?q=ISO%2014229)
 
 - Great Article to learn about UDS: [https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services](https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services)
+- [https://uds.readthedocs.io/en/latest/index.html](https://uds.readthedocs.io/en/latest/index.html)
 
 ## UDS Service Identifiers (SIDs)
 
-To find the Response SID to a Request SID just add `0x40` to it.
+> 💡 TIP: To find the Response SID to a Request SID just add `0x40` to it.
 
 ### Diagnostic and Communication Management
 
@@ -51,22 +52,48 @@ To find the Response SID to a Request SID just add `0x40` to it.
 
 ### Routine
 
-| Request SID | Response SID | Service | Details |
-| :---------: | :----------: | :------ | :------ |
-|`0x31`|`0x71`|**Routine Control**|*Initiate/stop routines (e.g. self-testing, erasing of flash memory).*|
+| Request SID | Response SID | Service             | Details                                                                |
+| :---------: | :----------: | :------------------ | :--------------------------------------------------------------------- |
+|   `0x31`    |    `0x71`    | **Routine Control** | *Initiate/stop routines (e.g. self-testing, erasing of flash memory).* |
 
 ### Upload Download
 
-| Request SID | Response SID | Service | Details |
-| :---------: | :----------: | :------ | :------ |
-|`0x34`|`0x74`|**Request Download**|*Start request to add software/data to ECU (including location/size).*|
-|`0x35`|`0x75`|**Request Upload**|*Start request to read software/data from ECU (including location/size).*|
-|`0x36`|`0x76`|**Transfer Data**|*Perform actual transfer of data following use of 0x74/0x75.*|
-|`0x37`|`0x77`|**Request Transfer Exit**|*Stop the transfer of data.*|
-|`0x38`|`0x78`|**Request File Transfer**|*Perform a file download/upload to/from the ECU.*|
+| Request SID | Response SID | Service                   | Details                                                                   |
+| :---------: | :----------: | :------------------------ | :------------------------------------------------------------------------ |
+|   `0x34`    |    `0x74`    | **Request Download**      | *Start request to add software/data to ECU (including location/size).*    |
+|   `0x35`    |    `0x75`    | **Request Upload**        | *Start request to read software/data from ECU (including location/size).* |
+|   `0x36`    |    `0x76`    | **Transfer Data**         | *Perform actual transfer of data following use of 0x74/0x75.*             |
+|   `0x37`    |    `0x77`    | **Request Transfer Exit** | *Stop the transfer of data.*                                              |
+|   `0x38`    |    `0x78`    | **Request File Transfer** | *Perform a file download/upload to/from the ECU.*                         |
 
 ### Negative Response
 
-| Request SID | Response SID | Service | Details |
-| :---------: | :----------: | :------ | :------ |
-||`0x7F`|**Negative Response**|*Sent with a Negative Response Code when a request cannot be handled.*|
+| Request SID | Response SID | Service               | Details                                                                |
+| :---------: | :----------: | :-------------------- | :--------------------------------------------------------------------- |
+|             |    `0x7F`    | **Negative Response** | *Sent with a Negative Response Code when a request cannot be handled.* |
+
+## UDS Example
+
+In this example we want to read the ECU Identification from the ECU (also called "manufacturer spare part number").
+
+For this we use the UDS service `Read Data by Identifier` (`0x22`) with the Data Identifier (DID) of `0xF187`.
+
+The ECU CAN ID in this example is `0x200` and the Tester CAN ID is `0x100`.
+
+Also no padding is used in this example.
+
+```bash
+CANID   Data                      Explanation
+--------------------------------------------------
+0x100   03 22 F1 87               # Request length 3 (0x03), SID 0x22, DID 0xF187.
+0x200   10 15 62 F1 87 4D 59 5F   # Positive Response (RSID 0x62 DID 0xF187). Multiframe length 21 bytes (0x15). Start of data (ASCII): MY_
+0x100   30 00 00                  # Flow Control Tester
+0x200   21 45 43 55 5F 49 44 45   # Consecutive Frame with data (ASCII): ECU_IDE
+0x200   22 4E 54 49 46 49 43 41   # Consecutive Frame with data (ASCII): NTIFICA
+0x200   23 54 49 4F 4E            # Consecutive Frame with data (ASCII): TION
+```
+
+Here we can see that the ECU returns "MY_ECU_IDENTIFICATION" as its ECU identification.
+
+
+
