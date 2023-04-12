@@ -13,7 +13,7 @@
 
 
 <!--Always display Page title at the top-->
-<h1 style="margin:0;color:var(--md-default-fg-color);font-weight:600;font-size:3em">{{ page.title | d(config.site_name, true)}}</h1>
+<h1 style="display:block;margin:0;color:var(--md-default-fg-color);font-weight:600;font-size:3em">{{ page.title | d(config.site_name, true)}}</h1>
 <small>
     <!-- mkdocs-git-revision-date-localized-plugin -->
     {% if page.meta.git_revision_date_localized %}

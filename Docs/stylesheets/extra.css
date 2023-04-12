@@ -1,3 +1,13 @@
+th {
+    vertical-align: middle!important;
+    text-align: center!important;
+}
+
+/*Hide all h1 because every page already has it in its header.*/
+h1 {
+    display: none;
+}
+
 /*Light Theme*/
 [data-md-color-scheme="light"] {
         /*Primary color shades*/
@@ -61,7 +71,7 @@
         --md-typeset-kbd-border-color: hsla(0, 0%, 72%, 1);
     
         /*Typeset `table` color shades*/
-        --md-typeset-table-color: hsla(0, 0%, 0%, 0.12);
+        --md-typeset-table-color: var(--md-default-fg-color);
         --md-typeset-table-color--light: hsla(0, 0%, 0%, 0.035);
     
         /*Admonition color shades*/
@@ -134,7 +144,7 @@
     /*--md-typeset-mark-color:;*/
 
     /*Typeset `del` and `ins` color shades*/
-    --md-typeset-del-color: hsla(6, 90%, 60%, 0.15);
+    --md-typeset-del-color: hsla(0, 0%, 100%, 0.15);
     --md-typeset-ins-color: hsla(150, 90%, 44%, 0.15);
 
     /*Typeset `kbd` color shades*/
@@ -143,8 +153,8 @@
     --md-typeset-kbd-border-color: hsla(0, 0%, 72%, 1);
 
     /*Typeset `table` color shades*/
-    --md-typeset-table-color: hsla(0, 0%, 0%, 0.12);
-    --md-typeset-table-color--light: hsla(0, 0%, 0%, 0.035);
+    --md-typeset-table-color: var(--md-default-fg-color);
+    --md-typeset-table-color--light: hsla(0, 0%, 100%, 0.035);
 
     /*Admonition color shades*/
     --md-admonition-fg-color: var(--md-default-fg-color);
