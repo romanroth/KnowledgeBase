@@ -6,7 +6,7 @@
 
 ## UDS Service Identifiers (SIDs)
 
-To find the Response SID to a Request SID just add 
+To find the Response SID to a Request SID just add `0x40` to it.
 
 ### Diagnostic and Communication Management
 
