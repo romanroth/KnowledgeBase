@@ -20,3 +20,8 @@ nano /etc/apt/sources.list
 deb http://ftp.us.debian.org/debian stretch main contrib non-free
 deb-src http://ftp.us.debian.org/debian stretch main contrib non-free
 ```
+
+## Backports
+
+- [https://backports.debian.org/Instructions/](https://backports.debian.org/Instructions/)
+- [https://wiki.debian.org/SimpleBackportCreation](https://wiki.debian.org/SimpleBackportCreation)
